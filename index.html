@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Scoped CSS Variables and JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小游戏网站</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="网站.css"> 
 </head>
-
 <body>
-  <h2>Update CSS Variables with
- 
-  </h2>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand active" href="#">小陈加油站</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li ><a href="https://theoldboy1997.github.io/study2/">学习社区</a></li>
+                <li><a href="https://theoldboy1997.github.io/study1/">娱乐社区</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                        讨论社区
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-comment"></span>        qq</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-qrcode"></span>         微信</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>        邮箱</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-  <div class="controls">
-    <label for="spacing">Spacing:</label>
-    <input id="spacing" type="range" name="spacing" min="0" max="200" value="10" data-sizing="px">
+</nav>
 
-    <label for="blur">Blur:</label>
-    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
 
-    <label for="base">Base Color</label>
-    <input id="base" type="color" name="base" value="#8282e6">
-  </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 
-  <style>
-    :root {
-      --spacing: 10px;
-      --blur: 10px;
-      --base: #8282e6;
-    }
 
-    img {
-      padding: var(--spacing);
-      background: var(--base);
-      filter: blur(var(--blur));
-    }
 
-    .highlight {
-      color: var(--base);
-    }
 
-    body {
-      text-align: center;
-      background: #193549;
-      color: white;
-      font-family: 'helvetica neue', sans-serif;
-      font-weight: 100;
-      font-size: 50px;
-    }
 
-    .controls {
-      margin-bottom: 50px;
-    }
-
-    input {
-      width: 100px;
-    }
-  </style>
-  <script src="./index.js"></script>
+<p class="text-center">
+    <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="https://theoldboy1997.github.io/gamegroup-whack/">1</a></li>
+        <li><a href="https://theoldboy1997.github.io/memorygame/">2</a></li>
+        <li><a href="https://theoldboy1997.github.io/gamegroup/">3</a></li>
+        <li><a href="https://theoldboy1997.github.io/gamegroup-whatch/">4</a></li>
+        <li><a href="#shiping">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>
+</p>
 </body>
-
 </html>
